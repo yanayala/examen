@@ -1,0 +1,73 @@
+def comprar_departamento():
+  print('precios de los departamentos')
+  print('Tipo A, 3800 UF ')
+  print('Tipo B, 3000 UF ')
+  print('Tipo C, 2800 UF ')
+  print('Tipo D, 3500 UF ')
+  print('     Departamentos Disponibles     ')
+  rut = int(input('ingrese su rut sin guiones ni puntos'))
+  pisos = []
+  for i in range(10):
+      departamentos = []
+      for j in range(40):
+          departamentos.append("O")
+      piso.append(pisos)
+      departamentos[9][A] = "X"
+      departamentos[9][D] = "X"
+      departamentos[7][B] = "X"
+      departamentos[6][C] = "X"
+      departamentos[4][A] = "X"
+      departamentos[2][B] = "X"
+      departamentos[2][C] = "X"
+      departamentos[2][D] = "X"
+      piso = int(input('ingresa tu piso '))
+      tipo = input('ingresa el tipo de departamento tipo A, B, C, D')
+      while departamentos[piso][tipo] == "X":
+       print('El departamento escogido ya esta ocupado')
+       piso = int(input('ingresa nuevamente  tu piso '))
+       tipo = input('ingresa nuevamente el tipo de departamento tipo A, B, C, D')
+      print('Tu departamento esta libre')
+      print('operacion realizada correctamente')
+
+def departamentos_disponibles():
+ # Mostrar matriz en pantalla
+  for departamentos in pisos:
+      for departamento in departamentos:
+          print(departamento, end=" ")
+      print()
+  departamento = int(input('ingresa una ubicacion y te dire si esta ocupada o no '))
+  while departamento == departamentos:
+   print('la ubicacion ingresada ya esta ocupada')
+   departamento = int(input('ingrese nuevamente la ubicacion porque la recien ingresada ya estaba ocupada'))
+  print('ubicacion libre')
+rut = 0
+tipo = 0
+piso = 0
+departamento = 0
+pisos = []
+elegir = 1
+departamentos = []
+while elegir == 1:
+ print('opcion 1: Comprar departamento')
+ print('opcion 2: Mostrar departamentos disponibles')
+ print('opcion 3: Ver listado de compradores')
+ print('opcion 4: mostrar ganancias')
+ print('opcion 5: Salir')
+ try:
+  opc = int(input('elegir una de las opciones'))
+  if opc > 0 and opc < 6:
+    if opc == 1:
+      comprar_departamento()
+    elif opc == 2:
+      departamentos_disponibles()
+    elif opc == 3:
+      listado_compradores()
+    elif opc == 4:
+      Mostrar_ganancias()
+    elif opc == 5:
+      print('usted a elegido la opcion de salir')
+      print(' Yan Ayala ')
+      print(' 12-07-2023')
+      elegir = 0
+ except:
+  print('error en el sistema')
